@@ -47,7 +47,7 @@ if(text.count.length==0){
 }else{
 
   let a=text.count.length
-  console.log(chalk.yellowBright(` Total World Count : ${a}`));
+  console.log(chalk.yellowBright(` Total Words Count : ${a}`));
 }
 
 
