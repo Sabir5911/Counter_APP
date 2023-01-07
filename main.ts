@@ -11,7 +11,7 @@ figlet.defaults({ fontPath: "assets/fonts" });
 
 
 
-var a='pasa'
+
 
 function ready() {
     console.log(chalk.red(figlet.textSync('Counter App')));
