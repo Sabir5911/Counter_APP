@@ -1,13 +1,17 @@
 
 import inquirer from"inquirer"
 import figlet from'figlet'
-import chalk from 'chalk'
+import chalk, { Chalk } from 'chalk'
 import chalkAnimation from 'chalk-animation';
 
 
 figlet.defaults({ fontPath: "assets/fonts" });
 
 
+
+
+
+var a='pasa'
 
 function ready() {
     console.log(chalk.red(figlet.textSync('Counter App')));
@@ -39,6 +43,7 @@ let text:{"count":string} =await inquirer.prompt([{
 
 
 
+
 if(text.count.length==0){
 
   console.log(chalk.redBright("Enter Some Thing First "));
@@ -46,8 +51,16 @@ if(text.count.length==0){
 
 }else{
 
-  let a=text.count.length
-  console.log(chalk.yellowBright(` Total Words Count : ${a}`));
+
+
+  let Chr=text.count.length
+  
+
+  
+  console.log(chalk.yellowBright(` Total Chr Count : ${Chr}`));
+  let Word=text.count.split(" ")
+  console.log(chalk.redBright (" Total words", Word.length));
+  
 }
 
 

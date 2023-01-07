@@ -3,6 +3,7 @@ import figlet from 'figlet';
 import chalk from 'chalk';
 import chalkAnimation from 'chalk-animation';
 figlet.defaults({ fontPath: "assets/fonts" });
+var a = 'pasa';
 function ready() {
     console.log(chalk.red(figlet.textSync('Counter App')));
 }
@@ -17,8 +18,10 @@ async function counter() {
         console.log(chalk.redBright("Enter Some Thing First "));
     }
     else {
-        let a = text.count.length;
-        console.log(chalk.yellowBright(` Total World Count : ${a}`));
+        let Chr = text.count.length;
+        console.log(chalk.yellowBright(` Total Chr Count : ${Chr}`));
+        let Word = text.count.split(" ");
+        console.log(chalk.redBright(" Total words", Word.length));
     }
 }
 let repeat = async () => {
